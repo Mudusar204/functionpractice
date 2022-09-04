@@ -65,12 +65,18 @@
 function testFuntion(n1, n2) {
     // console.log(n1 ,"this is number");
     // console.log(n2 ,"this is string");
-    if (n2 != undefined) {
-        console.log(n2);
+    // if(n2!=undefined){
+    //     console.log(n2);
+    // }
+    if (n1 > 0) {
+        return n1;
     }
-    return n1;
+    else {
+        return n2;
+    }
+    // return n2? n1+n2:n1
 }
 // testFuntion(1,9)
 // var result:number|string= testFuntion(12,1)
 // console.log(result);
-console.log(testFuntion(2));
+console.log(testFuntion(-5, 3));
