@@ -32,7 +32,7 @@
 
 // else{
 //     console.log("enter a valid nummber");
-    
+
 //  }
 // }
 // else{
@@ -52,7 +52,7 @@
 //  var store = maxNumber(9,7);
 
 // //  console.log(store);
- 
+
 
 
 
@@ -62,7 +62,7 @@
 // // //     // var num3:number= 3
 // // //     // var num4:number= 4
 
-    
+
 // // if (num1<num2&&num1<num3&&num1<num4){
 // // console.log(num1, "num1 is min");
 // // }
@@ -80,7 +80,7 @@
 
 // // else{
 // //     console.log("enter a valid nummber");
-    
+
 // // }
 // // }
 
@@ -92,26 +92,89 @@
 // var msg= cals()
 // console.log(msg);
 
-function testFuntion (n1:number,n2:number):number{
-    // console.log(n1 ,"this is number");
-    // console.log(n2 ,"this is string");
+// function testFuntion (n1:number,n2:number):number{
+//     // console.log(n1 ,"this is number");
+//     // console.log(n2 ,"this is string");
 
-    // if(n2!=undefined){
-    //     console.log(n2);
-        
-    // }
-    if(n1>0){
-    return n1
-    
+//     // if(n2!=undefined){
+//     //     console.log(n2);
+
+//     // }
+//     if(n1>0){
+//     return n1
+
+//     }
+//     else {return n2
+//     }
+
+//     // return n2? n1+n2:n1
+
+// }
+// // testFuntion(1,9)
+// // var result:number|string= testFuntion(12,1)
+// // console.log(result);
+// console.log(testFuntion(-5,3));
+
+//=======================> write a progaram to find max btween 4 numbers
+
+function maxNumber(num1: number, num2: number, num3: number, num4: number) {
+    if (num1 > num2 && num1 > num3 && num1 > num4) {
+        return (num1);
     }
-    else {return n2
+    else if (num2 > num1 && num2 > num3 && num2 > num4) {
+        return num2;
     }
 
-    // return n2? n1+n2:n1
-    
+    else if (num3 > num1 && num3 > num2 && num3 > num4) {
+        return num3;
+    }
+    else if (num4 > num1 && num4 > num2 && num4 > num3) {
+        return num4;
+    }
+    else {
+        return("enter a valid nummber");
+    }
 }
-// testFuntion(1,9)
-// var result:number|string= testFuntion(12,1)
-// console.log(result);
-console.log(testFuntion(-5,3));
+console.log(maxNumber(9, 0, 3, 4), "is max");
+
+function minNumber(num1: number, num2: number, num3: number, num4: number) {
+    if (num1 < num2 && num1 < num3 && num1 < num4) {
+        return num1;
+    }
+    else if (num2 < num1 && num2 < num3 && num2 < num4) {
+        return num2;
+    }
+
+    else if (num3 < num1 && num3 < num2 && num3 < num4) {
+        return num3;
+    }
+    else if (num4 < num1 && num4 < num2 && num4 < num3) {
+        return num4;
+    }
+    else {
+        return("enter a valid nummber");
+    }
+}
+console.log(minNumber(5, 7, 3, 4), " is min");
+
+// ============================write a program to find odd and even numbers 
+function numberType (num:number):string{
+    if(Number(num)){
+
+            if (num % 2 == 0 ){
+                return "number is even"
+            }
+        
+            else {
+                return "number is odd"
+            
+        } 
+        }
+        
+        else{
+            return("number is not even nor odd");
+        }
+}
+console.log(numberType(46));
+
 
